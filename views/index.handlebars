@@ -1,6 +1,8 @@
-<hr>
 
-<div class="container box">
+<h1>Gregory's css cookie garden</h1>
+<hr>
+<!--FORM-->
+<div class="container box {{favcolor}} ">
   <form action="/page" method="post">
 
     <div class="form-group row">
@@ -62,31 +64,33 @@
 
 <hr>
 
-<section>
+<!--COPY-->
+<section class="{{goodevil}}">
   <div class="container">
-    <article class="">
-      <h2>Likes</h2>
-      <ul>
-        <li>Display two lists,</li>
-      </ul>
-      <p> one of likes, another of dislikes. The content and/or ordering of these lists should shift with the properties listed above. </p>
-      <h2>dislikes</h2>
-      <p>Clearly, favorite food and color deserve a cameo on the list of likes.</p>
-    </article>
+    {{#if good}}
+      {{>good-likes}}
+    {{/if}}
+    {{#if evil}}
+      {{>evil-likes}}
+    {{/if}}
   </div>
 
   <div class="container">
-    <article class="">
-      <h2>Biography</h2>
-      <p> Let's build a life story for this configurable property-based persona. Be sure to touch on early childhood, education, and personal life. Don't forget to be weird—and, as always, be property-derived.</p>
-    </article>
+    {{#if good}}
+      {{>good-bio}}
+    {{/if}}
+    {{#if evil}}
+      {{>evil-bio}}
+    {{/if}}
   </div>
 
   <div class="container">
-    <article class="">
-      <h2>Resume</h2>
-      <p>Generate us a list of jobs and core competencies for this configurable property—fashioned entity. What jobs might an evil persona have? What core competencies might be exhibited by someone who likes the color chartreuse?</p>
-    </article>
+    {{#if good}}
+      {{>good-resume}}
+    {{/if}}
+    {{#if evil}}
+      {{>evil-resume}}
+    {{/if}}
   </div>
 </section>
 

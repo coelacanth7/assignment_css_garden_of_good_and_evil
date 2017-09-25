@@ -1,0 +1,44 @@
+.blue {
+	background-color: blue;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.green {
+	background-color: green;
+}
+
+.insanefont0 {
+	font-family: monospace;
+}
+
+.insanefont1 {
+	font-family: helvetica;
+}
+
+.insanefont2 {
+	font-family: sans-serif;
+}
+
+.insanefont3 {
+	font-family: cursive;
+}
+
+.insanefont4 {
+	font-family: fantasy;
+}
+
+.insanefont5 {
+	font-family: webdings;
+}
+
+.good {
+	background-image: url("http://cdn.playbuzz.com/cdn/0eda49f1-bfae-43b5-82ed-e10360b162d4/061961e3-dd70-494d-8ca6-c252fd9e2b09.jpg");
+	.opacity: 0.5;
+}
+
+.evil {
+	background-image: url("https://s3.postimg.org/sfb8kszir/shadowking.png");
+}
