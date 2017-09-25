@@ -1,0 +1,93 @@
+<hr>
+
+<div class="container box">
+  <form action="/page" method="post">
+
+    <div class="form-group row">
+      <label for="favfood" class="col-sm-2 col-form-label">Favorite Food</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="favfood" id="favfood" placeholder="Enter your favorite food">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="mr-sm-2" for="inlineFormCustomSelect">Favorite Color</label>
+      <select name="favcolor" class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+        <option selected>Choose...</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+      </select>
+    </div>
+
+    <fieldset class="form-group ">
+      <div class="row">
+        <legend class="col-form-legend col-sm-2">Are you good or Evil?</legend>
+        <div class="col-sm-10 form-inline">
+          <div class="form-check mr-3">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="goodevil" id="gridRadios1" value="good" checked>
+              Good
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="goodevil" id="gridRadios2" value="evil">
+              Evil
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <div class="form-group row">
+      <div class="col-sm-2">Insanity Level</div>
+      <div class="col-sm-10">
+        <div class="form-check">
+
+          <input type="range" name="insanity" min="0" max="5">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <button type="submit" value="update-page" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+
+  </form>
+</div>
+
+<hr>
+
+<section>
+  <div class="container">
+    <article class="">
+      <h2>Likes</h2>
+      <ul>
+        <li>Display two lists,</li>
+      </ul>
+      <p> one of likes, another of dislikes. The content and/or ordering of these lists should shift with the properties listed above. </p>
+      <h2>dislikes</h2>
+      <p>Clearly, favorite food and color deserve a cameo on the list of likes.</p>
+    </article>
+  </div>
+
+  <div class="container">
+    <article class="">
+      <h2>Biography</h2>
+      <p> Let's build a life story for this configurable property-based persona. Be sure to touch on early childhood, education, and personal life. Don't forget to be weird—and, as always, be property-derived.</p>
+    </article>
+  </div>
+
+  <div class="container">
+    <article class="">
+      <h2>Resume</h2>
+      <p>Generate us a list of jobs and core competencies for this configurable property—fashioned entity. What jobs might an evil persona have? What core competencies might be exhibited by someone who likes the color chartreuse?</p>
+    </article>
+  </div>
+</section>
+
+<hr>

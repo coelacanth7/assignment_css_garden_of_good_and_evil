@@ -12,7 +12,7 @@ app.use(cookieParser());
 var cookieSession = require("cookie-session");
 app.use(
 	cookieSession({
-		name: "session",
+		name: "session1",
 		keys: ["123456789abcefgh"]
 	})
 );
@@ -29,7 +29,21 @@ app.engine(
 app.set("view engine", "handlebars");
 
 app.get("/", (req, res) => {
-	res.end("yo");
+	var favfood = req.cookies["favfood"];
+	var favcolor = req.cookies["favcolor"];
+	var goodevil = req.cookies["goodevil"];
+	var insanity = req.cookies["insanity"];
+	console.log("cookies ", req.cookies);
+	res.render("index", { favfood, favcolor, goodevil, insanity });
+});
+
+app.post("/page", (req, res) => {
+	res.cookie("favfood", req.body.favfood);
+	res.cookie("favcolor", req.body.favcolor);
+	res.cookie("goodevil", req.body.goodevil);
+	res.cookie("insanity", req.body.insanity);
+	console.log("req.body ", req.body);
+	res.redirect("back");
 });
 
 app.listen(3000, () => {
